@@ -11,7 +11,7 @@ for pageNum in range(pdf1Reader.numPages):
     pdfWriter.addPage(pdf1Reader.getPage(pageNum))
     pdfWriter.addPage(pdf2Reader.getPage(pageNum))
 
-pdfOutputFile = open('C:/Users/Adam/Desktop/razem.pdf', 'wb')
+pdfOutputFile = open('merged.pdf', 'wb')
 pdfWriter.write(pdfOutputFile)
 
 pdfOutputFile.close()
